@@ -22,6 +22,20 @@ body:has(.card[data-color="green"]:hover) {
 }
 
 @layer utilities {
+  @keyframes breathe {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+
+  .animate-breathe {
+    animation: breathe 3s ease-in-out infinite;
+  }
+
   .max-container {
     @apply max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
   }
@@ -36,6 +50,10 @@ body:has(.card[data-color="green"]:hover) {
 
   .blue-gradient_text {
     @apply bg-gradient-to-r from-[#00c6ff] to-[#0072ff] bg-clip-text text-transparent;
+  }
+
+  .purple-gradient_text {
+    @apply bg-gradient-to-r from-[#7543ff] to-[#6410ff] bg-clip-text text-transparent;
   }
 
   .input {
@@ -63,7 +81,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .info-box {
-    @apply mx-5 relative flex text-white flex-col gap-3 max-w-2xl neo-brutalism-blue pt-4 pb-12 px-8;
+    @apply mx-5 relative flex text-white flex-col gap-3 max-w-2xl neo-brutalism-blue-op2 pt-4 pb-12 px-8;
   }
 
   .neo-btn {
@@ -171,6 +189,15 @@ body:has(.card[data-color="green"]:hover) {
   position: relative;
   border-radius: 10px;
   border: #2b77e7;
+  box-shadow: 0.6vmin 0.6vmin #336cc1, 1vmin 1vmin #0092db, 1vmin 1vmin #0092db,
+    0.65vmin 1vmin #0092db, 1vmin 0.65vmin #0092db;
+}
+
+.neo-brutalism-blue-op2 {
+  background: #2b51e7;
+  position: relative;
+  border-radius: 10px;
+  border: #0c18a2;
   box-shadow: 0.6vmin 0.6vmin #336cc1, 1vmin 1vmin #0092db, 1vmin 1vmin #0092db,
     0.65vmin 1vmin #0092db, 1vmin 0.65vmin #0092db;
 }
