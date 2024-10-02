@@ -5,13 +5,13 @@ const Alert = ({ type, text }) => {
     <div className='absolute top-12 left-0 right-0 flex justify-center items-center flex-col animate-breathe'>
       <div
         className={`${
-          type === "danger" ? "bg-red-700" : "bg-green-800"
-        } p-2 text-indigo-100 leading-none lg:rounded-3xl flex flex-col lg:inline-flex justify-center items-center`}
+          type === "danger" ? "danger-container" : "success-container"
+        } p-2 text-white leading-none lg:rounded-3xl flex flex-col lg:inline-flex justify-center items-center`}
         role='alert'
       >
         <p
           className={`${
-            type === "danger" ? "bg-red-500" : "bg-green-500"
+            type === "danger" ? "bg-red-600" : "bg-green-600"
           } flex rounded-full uppercase px-2 py-1 font-semibold text-xs mb-2`}
         >
           {type === "danger" ? "Failed" : "Success"}

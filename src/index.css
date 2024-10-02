@@ -81,6 +81,10 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .info-box {
+    @apply mx-5 relative flex text-white flex-col gap-3 max-w-2xl neo-brutalism-other pt-4 pb-12 px-8;
+  }
+
+  .info-box-2 {
     @apply mx-5 relative flex text-white flex-col gap-3 max-w-2xl neo-brutalism-blue-op2 pt-4 pb-12 px-8;
   }
 
@@ -133,7 +137,15 @@ body:has(.card[data-color="green"]:hover) {
 }
 
 .block-container .btn-back-red {
-  background: linear-gradient(135deg, #ff4b1f -20%, #ff9068 120%);
+  background: linear-gradient(135deg, #b62400 -20%, #ff6868 120%);
+}
+
+.danger-container {
+  background: linear-gradient(135deg, #cd0d0d -20%, #ff9068 120%);
+}
+
+.success-container {
+  background: linear-gradient(135deg, #0c8d33 -20%, #68ffbe 120%);
 }
 
 .block-container .btn-back-green {
@@ -194,12 +206,23 @@ body:has(.card[data-color="green"]:hover) {
 }
 
 .neo-brutalism-blue-op2 {
-  background: #2b51e7;
+  /* background: #142363; */
+  background: linear-gradient(135deg, #36069f -20%, #40c9ff 120%);
   position: relative;
   border-radius: 10px;
   border: #0c18a2;
-  box-shadow: 0.6vmin 0.6vmin #336cc1, 1vmin 1vmin #0092db, 1vmin 1vmin #0092db,
-    0.65vmin 1vmin #0092db, 1vmin 0.65vmin #0092db;
+  box-shadow: 0.6vmin 0.6vmin #336cc1, 1vmin 1vmin #0092db, 1vmin 1vmin #0071aa,
+    0.65vmin 1vmin #0033db, 1vmin 0.65vmin #001ddb;
+}
+
+.neo-brutalism-other {
+  /* background: #14ac92; */
+  background: linear-gradient(135deg, #1a90a0 -20%, #2effce 120%);
+  position: relative;
+  border-radius: 10px;
+  border: #02754d;
+  box-shadow: 0.6vmin 0.6vmin #028f44, 1vmin 1vmin #6ce9d6, 1vmin 1vmin #0092db,
+    0.65vmin 1vmin #00dbd0, 1vmin 0.65vmin #00ccdb;
 }
 
 .neo-brutalism-white {

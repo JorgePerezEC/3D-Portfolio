@@ -6,21 +6,27 @@ import Sky from "../models/Sky";
 import Plane from "../models/Plane";
 import Charizard from "../models/Charizard";
 import HomeInfo from "../components/HomeInfo";
+import onepiece from "../assets/onepiece.mp3";
+import { soundoff, soundon } from "../assets/icons";
 
 const Home = () => {
+  const audioRef = useRef(new Audio(onepiece));
+  audioRef.current.volume = 0.3;
+  audioRef.current.loop = true;
+
   const [currentStage, setCurrentStage] = useState(1);
   const [isRotating, setIsRotating] = useState(false);
   const [isPlayingMusic, setIsPlayingMusic] = useState(false);
 
-  // useEffect(() => {
-  //   if (isPlayingMusic) {
-  //     audioRef.current.play();
-  //   }
+  useEffect(() => {
+    if (isPlayingMusic) {
+      audioRef.current.play();
+    }
 
-  //   return () => {
-  //     audioRef.current.pause();
-  //   };
-  // }, [isPlayingMusic]);
+    return () => {
+      audioRef.current.pause();
+    };
+  }, [isPlayingMusic]);
 
   const adjustIslandForScreenSize = () => {
     let screenScale = null;
@@ -40,10 +46,10 @@ const Home = () => {
     // let rotation = [0.1, 4.7, 0];
 
     if (window.innerWidth < 768) {
-      screenScale = [4.5, 4.5, 4.5];
+      screenScale = [2, 2, 2];
       screenPosition = [0, -1.5, 0];
     } else {
-      screenScale = [6, 6, 6];
+      screenScale = [3, 3, 3];
       screenPosition = [0, -4, -4];
     }
     return [screenScale, screenPosition];
@@ -83,12 +89,20 @@ const Home = () => {
           />
           <Plane
             isRotating={isRotating}
-            planeScale={planeScale}
-            planePosition={planePosition}
+            scale={planeScale}
+            position={planePosition}
             rotation={[0, 20, 0]}
           />
         </Suspense>
       </Canvas>
+      <div className='absolute bottom-2 left-2 transform transition duration-300 hover:scale-105'>
+        <img
+          className='w-10 h-10 object-contain cursor-pointer'
+          src={!isPlayingMusic ? soundoff : soundon}
+          alt='sound'
+          onClick={() => setIsPlayingMusic(!isPlayingMusic)}
+        />
+      </div>
     </section>
   );
 };

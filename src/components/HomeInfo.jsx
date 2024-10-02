@@ -5,8 +5,8 @@ import { arrow } from "../assets/icons";
 const HomeInfo = ({ currentStage }) => {
   if (currentStage === 1)
     return (
-      <div className='bg-emerald-600 border-r-2 border-cyan-300 rounded-2xl shadow-lg animate-breathe'>
-        <h1 className='sm:text-xl sm:leading-snug text-center py-4 px-8 text-white mx-5'>
+      <div className='info-box-2 animate-breathe'>
+        <h1 className='sm:text-xl sm:leading-snug text-center text-white py-2'>
           Hi, I'm
           <span className='font-semibold mx-2 text-white'>Jorge</span>
           👋
