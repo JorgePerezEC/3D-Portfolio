@@ -165,7 +165,7 @@ export const experiences = [
     company_name: "IGEPN",
     icon: igepn,
     iconBg: "#ffc87a",
-    date: "March 2020 - April 2021",
+    date: "September 2022 - November 2022",
     points: [
       "Improved Python code documentation according to PEP8, increasing readability and quality.",
       "Developed informative websites with Sphinx using Visual Studio Code, Git, GitHub, GitLab, and GitHub Pages.",
