@@ -41,6 +41,7 @@ import rumi from "./rumi.png";
 import potted_plant from "./potted-plant.svg";
 import blockchain from "./blockchain.svg";
 import mail from "./mail.svg";
+import prex from "./prex.jpg";
 
 export {
   css,
@@ -86,4 +87,5 @@ export {
   potted_plant,
   blockchain,
   mail,
+  prex,
 };

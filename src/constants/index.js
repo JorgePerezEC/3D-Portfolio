@@ -39,6 +39,7 @@ import {
   potted_plant,
   blockchain,
   mail,
+  prex,
 } from "../assets/icons";
 
 export const skills = [
@@ -164,7 +165,7 @@ export const experiences = [
     title: "Python Developer Intern",
     company_name: "IGEPN",
     icon: igepn,
-    iconBg: "#ffc87a",
+    iconBg: "#e0fbff",
     date: "September 2022 - November 2022",
     points: [
       "Improved Python code documentation according to PEP8, increasing readability and quality.",
@@ -191,7 +192,7 @@ export const experiences = [
     title: "Research Department Analyst",
     company_name: "Instituto Superior Universitario Rumiñahui [ISTER]",
     icon: rumi,
-    iconBg: "#ffc87a",
+    iconBg: "#e0fbff",
     date: "Jan 2024 - Ago 2024",
     points: [
       "Managed over 100 research projects, demonstrating exceptional organizational and leadership skills.",
@@ -199,6 +200,16 @@ export const experiences = [
       "Developed a web page using React and web3 to issue over 80 NFT certificates on Polygon Network, showcasing problem-solving and creativity.",
       "Utilized Power Automate to streamline tasks, highlighting time management and adaptability.",
       "Taught a workshop on NoSQL databases to over 30 students, enhancing educational delivery and technical knowledge sharing.",
+    ],
+  },
+  {
+    title: "Full Stack Developer",
+    company_name: "Prex Technologies",
+    icon: prex,
+    iconBg: "#e0fbff",
+    date: "Oct 2024 - Present",
+    points: [
+      "As a Full Stack Developer at Prex Technologies, I’ll be responsible for building, maintaining, and optimizing web applications using Django. Working across front-end and back-end development, I’ll contribute to creating robust, scalable solutions that meet evolving business needs.",
     ],
   },
 ];
