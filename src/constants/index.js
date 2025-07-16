@@ -41,6 +41,7 @@ import {
   mail,
   prex,
 } from "../assets/icons";
+import { concreto, angular, azure } from "../assets/images";
 
 export const skills = [
   {
@@ -158,6 +159,16 @@ export const skills = [
     name: "IoT",
     type: "Internet of Things",
   },
+  {
+    imageUrl: angular,
+    name: "Angular",
+    type: "Frontend",
+  },
+  {
+    imageUrl: azure,
+    name: "Azure",
+    type: "Cloud",
+  },
 ];
 
 export const experiences = [
@@ -209,7 +220,14 @@ export const experiences = [
     iconBg: "#e0fbff",
     date: "Oct 2024 - Present",
     points: [
-      "As a Full Stack Developer at Prex Technologies, I’ll be responsible for building, maintaining, and optimizing web applications using Django. Working across front-end and back-end development, I’ll contribute to creating robust, scalable solutions that meet evolving business needs.",
+      "Implemented functional improvements and new features in the Concreto.ai platform, a construction sector requisition management system developed with Django, enhancing its usability and performance.",
+      "Collaborated in the migration of the providers module from Django to a modern architecture based on Angular for the frontend and FastAPI + SQLAlchemy for the backend, using the repository pattern for greater scalability and maintainability.",
+      "Designed and implemented a modular, reusable email service across systems. Supports asynchronous sending, HTML templates and SendinBlue, attachments, CC and BCC, standardizing transactional notifications.",
+      "Utilize Azure DevOps for development lifecycle management, working with feature branches, managing pull requests and deploying changes to production through Azure App Services.",
+      "Collaborate closely with the technical team and clients, participating in planning meetings, deliverable reviews and functional validation.",
+      "Effectively organize to participate in multiple parallel projects, ensuring quality and meeting deadlines.",
+      "Work under Scrum methodology, participating in daily standups and promoting active collaboration.",
+      "Provided second-level technical support, resolving incidents and ensuring operational continuity of the platform.",
     ],
   },
 ];
@@ -233,6 +251,14 @@ export const socialLinks = [
 ];
 
 export const projects = [
+  {
+    iconUrl: concreto,
+    theme: "btn-back-blue",
+    name: "Concreto.ai",
+    description:
+      "Concreto.ai is a platform that connects providers with SEMAICA, one of Ecuador's most important clients in the construction sector. This platform is one of the projects managed by Prex Technologies, where I have contributed to its development and support. The client side is developed with Django, while the providers side uses Angular with FastAPI backend.",
+    link: "https://www.concreto.ai/",
+  },
   {
     iconUrl: blockchain,
     theme: "btn-back-red",

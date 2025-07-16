@@ -8,15 +8,15 @@ const Projects = () => {
   return (
     <section className='max-container'>
       <h1 className='head-text'>
-        My{" "}
         <span className='blue-gradient_text drop-shadow font-semibold'>
           Projects
-        </span>
+        </span>{" "}
+        I've worked on
       </h1>
 
       <p className='text-slate-500 mt-2 leading-relaxed'>
-        I'm excited to share my personal projects, showcasing my expertise and
-        commitment to delivering high-quality solutions. Browse through my
+        I'm excited to share projects I've worked on, showcasing my expertise
+        and commitment to delivering high-quality solutions. Browse through my
         portfolio to learn more about my work.
       </p>
 

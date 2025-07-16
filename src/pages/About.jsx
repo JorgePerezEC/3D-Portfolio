@@ -6,6 +6,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 import CTA from "../components/CTA";
 import { experiences, skills, socialLinks } from "../constants";
+import { my_resume } from "../assets/docs";
 
 const About = () => {
   return (
@@ -20,14 +21,23 @@ const About = () => {
         <p>
           Experienced and versatile IT Engineer with a strong focus on mobile
           and web application development. Proven expertise in the MERN stack
-          (MongoDB, Express, React, Node.js), allowing seamless transitions
-          between web and mobile platforms. Adept at building scalable,
-          high-performance applications with a strong emphasis on user
-          experience and modern design principles. Extensive experience in web
-          programming, UX/UI design, and blockchain applications, complemented
-          by a track record of managing complex projects and delivering
-          innovative solutions.
+          (MongoDB, Express, React, Node.js), Django, Angular, and FastAPI,
+          allowing seamless transitions between web and mobile platforms. 
+          Adept at building scalable, high-performance applications with a 
+          strong emphasis on user experience and modern design principles. 
+          Extensive experience in web programming, UX/UI design, and blockchain 
+          applications, complemented by a track record of managing complex 
+          projects and delivering innovative solutions. Currently contributing 
+          to Concreto.ai, a construction sector requisition management system, 
+          implementing functional improvements, modernizing architecture with 
+          Angular and FastAPI, and providing comprehensive technical support 
+          while working under Scrum methodology with Azure DevOps.
         </p>
+      </div>
+      <div className='mt-5 flex flex-col gap-3 text-slate-500'>
+        <a href={my_resume} target="_blank" rel="noopener noreferrer">
+          <button className='btn rounded-xl'>View Resume</button>
+        </a>
       </div>
       <div className='py-10 flex flex-col'>
         <h3 className='subhead-text'>My Social Links</h3>
