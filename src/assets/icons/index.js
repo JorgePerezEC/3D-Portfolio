@@ -42,6 +42,8 @@ import potted_plant from "./potted-plant.svg";
 import blockchain from "./blockchain.svg";
 import mail from "./mail.svg";
 import prex from "./prex.jpg";
+import spain from "./spain.svg";
+import uk from "./uk.svg";
 
 export {
   css,
@@ -88,4 +90,6 @@ export {
   blockchain,
   mail,
   prex,
+  spain,
+  uk,
 };

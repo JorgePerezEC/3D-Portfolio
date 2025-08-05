@@ -6,7 +6,8 @@ import "react-vertical-timeline-component/style.min.css";
 
 import CTA from "../components/CTA";
 import { experiences, skills, socialLinks } from "../constants";
-import { my_resume } from "../assets/docs";
+import { my_resume_es, my_resume_en } from "../assets/docs";
+import { spain, uk } from "../assets/icons";
 
 const About = () => {
   return (
@@ -35,9 +36,21 @@ const About = () => {
         </p>
       </div>
       <div className='mt-5 flex flex-col gap-3 text-slate-500'>
-        <a href={my_resume} target="_blank" rel="noopener noreferrer">
-          <button className='btn rounded-xl'>View Resume</button>
-        </a>
+        <div className='flex items-center gap-4'>
+          <h3 className='text-lg font-semibold text-slate-700'>Get my resume</h3>
+          <div className='flex gap-4'>
+            <a href={my_resume_es} target="_blank" rel="noopener noreferrer">
+              <button title="Spanish Resume" className='w-12 h-12 rounded-full bg-white shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center border-2 border-gray-200 hover:border-blue-300'>
+                <img src={spain} alt="Spain" className='w-6 h-4' />
+              </button>
+            </a>
+            <a href={my_resume_en} target="_blank" rel="noopener noreferrer">
+              <button title="English Resume" className='w-12 h-12 rounded-full bg-white shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center border-2 border-gray-200 hover:border-blue-300'>
+                <img src={uk} alt="UK" className='w-6 h-4' />
+              </button>
+            </a>
+          </div>
+        </div>
       </div>
       <div className='py-10 flex flex-col'>
         <h3 className='subhead-text'>My Social Links</h3>
